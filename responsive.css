@@ -1,0 +1,20 @@
+@media screen and (max-width: 300px) {
+    .logo {
+        max-width: 80%; 
+    }
+
+    .main form {
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .table {
+        width: 80%;
+    }
+
+    .footer {
+        max-width: 20%;
+    } 
+}
