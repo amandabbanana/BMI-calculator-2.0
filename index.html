@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The cute BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+<div class="header-main">
+    <div class="header">
+        <div class="logo"><img src="img/logo.png" alt="logo"></div>
+    </div>
+
+<div class="main"><form id="bmiForm">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" name="weight" required>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" name="height" required>
+
+        <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+
+        <div id="result"></div>
+    </form></div>
+</div>
+
+<div class="table">
+	<table>
+		<thead>
+			<tr>
+				<th>Classification</th>
+				<th>BMI range</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Severe Thinness</td>
+				<td>< 16</td>
+			</tr>
+			<tr>
+				<td>Moderate Thinness</td>
+				<td>16 - 17</td>
+			</tr>
+			<tr>
+				<td>Mild Thinness</td>
+				<td>17 - 18.5</td>
+			</tr>
+			<tr>
+				<td>Normal</td>
+				<td>18.5 - 25</td>
+			</tr>
+			<tr>
+				<td>Overweight</td>
+				<td>25 - 30</td>
+			</tr>
+            <tr>
+				<td>Obese Class I</td>
+				<td>30 - 35</td>
+			</tr>
+            <tr>
+				<td>Obese Class II</td>
+				<td>35 - 40</td>
+			</tr>
+            <tr>
+				<td>Obese Class III</td>
+				<td>> 40</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="footer">
+    <p>Copyright © 2024. Designed and developed by みみ。</p>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
